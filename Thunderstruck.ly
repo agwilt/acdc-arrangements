@@ -75,8 +75,7 @@ celloI = \relative c
   a4 r4 r2 | d4 d \times 2/3 { c c a } |
   a4 r r2 | r2 \times 2/3 { r4 c c } |
   a4 r4 r2 | R1 |
-  R | R |
-  R | R |
+  \repeat unfold 4 { R }
   r2 r4 cis8 a | cis16 cis d8 cis e8~ e2 |
   r2 r4 a,8 a | a16 a a8 a g8\glissando a2
   \repeat volta 4 { R1 | R^"play 4 times" }
