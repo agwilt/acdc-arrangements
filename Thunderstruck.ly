@@ -18,7 +18,7 @@ global = {
   \partial 16
 }
 
-didl = { \relative a { a'16 a, g' a, fis' a, g' a, fis' a, e' a, fis' a, d a | e' a, cis a d a cis a d a cis a d a cis a } }
+didl = { \relative a { a'16 a, g' a, fis' a, g' a, fis' a, e' a, fis' a, d a | e' a, cis a d a cis a d a cis a d a cis a } } % the angus start
 cise = { cis16 a e' a, }
 cisebar = { \cise \cise \cise \cise }
 df = { d16 a f' a, }
@@ -28,7 +28,7 @@ thunderchoir = { \xNotesOn a4 a4 \xNotesOff r8 a8( c a ) | c4( d8 c ) e4( d16 c 
 thundersing = { a4 a4 r2 | R1 }
 thunder = { \xNotesOn a,4 a \xNotesOff }
 basebar = { \relative a, { a8 a8 a8 a8 a8 a8 a8 a8 } }
-Fthbar = { \relative a { <e a>8 r <e a>[ r16 <e a>] r <e a> <e a> r <e a>8 r8 } }
+Fthbar = { \relative a { <e a>8 r <e a>[ r16 <e a>] r <e a> <e a> r <e a>8 r8 } } % Bossa Strich / strumming
 grindone = { \relative a, { <a e'>2 g16 d r8 r4 | r8 <g d'>8 r16 <g d'>8. <d a'>2 } }
 grindtwo = { \relative a, { <a e'>4. <g d'> f8 d | <g d'>4. <d a'>8~ <d a'>2 } }
 
@@ -189,6 +189,7 @@ celloIVPart = \new Staff \with {
 } { \clef bass \celloIV }
 
 
+% for the score, just comment out unneeded parts, don't forget things like "Play 4x"
 \score {
   <<
     \celloIPart
