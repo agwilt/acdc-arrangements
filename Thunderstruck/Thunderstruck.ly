@@ -95,7 +95,7 @@ celloI = \relative c
   a2 r8 e'8~ e4 | c8 d c a~ a4 r | R1 | c4 c4 \times 2/3 { r4 c c } | a2 r2 |
   r2 \times 2/3 { r4 c a } | a4( c) r2 | r2 r4 c8 c | e4 r r2 |
   r2 r4 c8 a | e'2 r2 | c4 c c c |
-  c1-\bendAfter #-2 | R1 | R1 | R1 | R1 \bar "|."
+  c1-\bendAfter #-2 | R1 | R1^\markup { \italic "rit." } | R1 | R1 \bar "|."
 }
 
 celloII = \relative c'
