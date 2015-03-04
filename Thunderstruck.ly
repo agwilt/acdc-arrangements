@@ -16,6 +16,7 @@ global = {
   \key a \major
   \time 4/4
   \partial 16
+  \tempo 4 = 132
 }
 
 didl = { \relative a { a'16 a, g' a, fis' a, g' a, fis' a, e' a, fis' a, d a | e' a, cis a d a cis a d a cis a d a cis a } } % the angus start
