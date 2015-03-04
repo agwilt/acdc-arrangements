@@ -39,12 +39,12 @@ celloI = \relative c
   R1 | R | r2 r8_"fade in" a8(-4 c a ) | c4( d8 c ) e4( d16 c a8  ) |
   \choir
   \choir
-  \repeat volta 4 { r2 r8 a8( c a ) | c4( d8 c ) e4( d16 c a8^"play 4 times"  ) }
+  \repeat volta 2 { r2 r8 a8( c a ) | c4( d8 c ) e4( d16 c a8  ) }
   \repeat volta 2 { \thunderchoir }
-  \repeat volta 4 { \xNotesOn a4 a4 \xNotesOff r8 a8( c a ) | c4( d8 c ) e4( d16 c a8^"play 4 times"  ) }
+  \repeat volta 2 { \xNotesOn a4 a4 \xNotesOff r8 a8( c a ) | c4( d8 c ) e4( d16 c a8  ) }
   \repeat volta 4 { a'4 a4 r2 }
-  \alternative { { R1 } { r2 r8 a a cis } }
-  r2 r8 a8 a cis | a a a cis8~ cis a4 g8~
+  \alternative { { R1 } { r2 r8 a a cis~ } }
+  cis4 r4 r8 a8 a cis | a a a cis8~ cis a4 g8~
   g\glissando a  r4 r2 | \xNotesOn a,4 a \xNotesOff r8 a' a cis
   r2 r8 a8 a cis~ | cis a a a~ \times 2/3 { a4 a a }
   a,4 r4 r2 | \xNotesOn a 4 a \xNotesOff \times 2/3 { r4 a' a }
@@ -78,8 +78,8 @@ celloI = \relative c
   \repeat unfold 4 { R }
   r2 r4 cis8 a | cis16 cis d8 cis e8~ e2 |
   r2 r4 a,8 a | a16 a a8 a g8\glissando a2
-  \repeat volta 4 { R1 | R^"play 4 times" }
-  \repeat volta 4 { r2 r8 a,8( c a ) | c4( d8 c ) e4( d16 c a8^"play 4 times"  ) }
+  \repeat unfold 4 { R1 | R }
+  \repeat volta 4 { r2 r8 a,8( c a ) | c4( d8 c ) e4^"play 4 times"( d16 c a8  ) }
   a1 |  r2 \times 2/3 { r4 c' a } |
   a2 r | r2 \times 2/3 { r4 c a } |
   a2 r | c4 c \times 2/3 { c4 c a } |
@@ -88,20 +88,26 @@ celloI = \relative c
   cis2 r8 cis b a~ | a4 r4 r2 |
   c2 r8 c b a~ | a4 r4 r2 |
   cis2 r8 cis b a~ | a4 r4 r2 |
-  c2 r8 c b a~ | a4 r4 r2 |
+  c2 r8 c b a~ | a8 c8 r8 c8 \times 2/3 { r4 c a } |
+  a2 r | c4 c \times 2/3 { c4 c a } |
+  a2 r2 | c8 d~ d e~ \times 2/3 { e4 c a }
+  a2 r8 e'8~ e4 | c8 d c a~ a4 r | R1 | c4 c4 \times 2/3 { r4 c c } | a2 r2 |
+  r2 \times 2/3 { r4 c a } | a4( c) r2 | r2 r4 c8 c | e4 r r2 |
+  r2 r4 c8 a | e'2 r2 | c4 c c c |
+  c1-\bendAfter #-2 | R1 | R1 | R1 | R1 \bar "|."
 }
 
 celloII = \relative c'
 {
   \global
-  \partial 16 a16_"pizz" |
+  \partial 16 a16 |
   \cisebar \cisebar
   \dfbar \dfbar
   \cisebar \cisebar
   \dfbar \dfbar
-  \repeat volta 4 { a'-3 a, g' a, fis' a, g' a, fis' a, e'-1 a, fis' a, d-2 a | e' a, cis a d a cis a d a cis a d a cis a | }
+  \repeat volta 2 { a'-3 a, g' a, fis' a, g' a, fis' a, e'-1 a, fis' a, d-2 a | e' a, cis a d a cis a d a cis a d a cis a | }
   \repeat volta 2 { \didl }
-  \repeat volta 4 { a' a, g' a, fis' a, g' a, fis' a, e' a, fis' a, d a | e' a, cis a d a cis a d a cis a d a cis a }
+  \repeat volta 2 { a' a, g' a, fis' a, g' a, fis' a, e' a, fis' a, d a | e' a, cis a d a cis a d a cis a d a cis a }
   \repeat volta 4 { a' a, g' a, fis' a, g' a, fis' a, e' a, fis' a, d a }
   \alternative { { e' a, cis a d a cis a d a cis a d a cis a } { e' a, cis a d a cis a d a cis a d a cis a } }
   \repeat percent 8 { \didl }
@@ -111,24 +117,28 @@ celloII = \relative c'
   \grindone
   R1 | R |
   \repeat unfold 5 { \relative a, { <a e'>~ | <a e'>~ | <a e'>~ | <a e'> | } }
-  \repeat unfold 3 { <a e'>4 <g d'> <d a'> r | r2 r4 <g d'> | }
-  <a e'> <g d'> <d a'> r | R1 |
+  \repeat unfold 3 { \relative a, { <a e'>4 <g d'> <d a'> r | r2 r4 <g d'> |} }
+  <a, e'> <g d'> <d a'> r | R1 |
   \grindtwo
   \grindtwo
   \grindtwo
   \grindtwo
-  <a e'>1~ | <a e'> |
+  <a' e'>1~ | <a e'> |
   <a e'>1~ | <a e'> |
   <a e'>8 d4 <a e'>8~ <a e'>2~ | <a e'>1 |
   <a e'>8 d4 <a e'>8~ <a e'>2~ | <a e'>1 | \break
-  \repeat volta 4 { R_"Hier etwas geiles ausdenken" | R } \break
-  \repeat volta 4 { <a e'> 4. <g d'> r4 | R1 | }
+  <d' fis>8 <d fis>4 <a e'>8~ <a e'>8 r8 r4 | g8 g4 d'8~ d8 e8~ e4 |
+  a16 g e d cis8 a8~ a4 r8 g8 | g4. a8~ a4 e'4 |
+  R1 | d4 c8 a8~ a8 a'8~ a4 | \times 2/3 { a8 g e } \times 2/3 { dis d c } \times 2/3 { e g e } d16 e dis d | c16 a16~ a8 d8 d8~ d2 |
+  \repeat volta 4 { <a, e'> 4. <g d'> r4 | R1 | }
   R | R |
   \grindtwo
   \grindtwo
   \grindtwo
   \grindtwo
   \repeat unfold 4 { <a e'> 2 r8 e fis <d a'>8~ | <d a'>2 r2 | }
+  \repeat unfold 8 { \grindtwo }
+  \didl | \didl | a'''4 r4 r2 \bar "|."
 }
 
 
@@ -136,27 +146,30 @@ celloIII = \relative c
 {
   \global
   \partial 16 r16 |
-  R1 R1 R1 R1 R1 R1 R1 R1 \repeat volta 4 { R1 R1 }  |
+  R1 R1 R1 R1 R1 R1 R1 R1 \repeat volta 2 { R1 R1 }  |
   \repeat volta 2 { R1 | R1 | }
-  \repeat volta 4 { R1 | R1 | }
+  \repeat volta 2 { R1 | R1 | }
   \repeat volta 4 { \Fthbar }
   \alternative { { \Fthbar } { \Fthbar}  }
   \repeat percent 8 { \Fthbar \Fthbar }
-  \repeat percent 18 { \didl }
-  R1 | R1 | \break
+  \repeat percent 15 { \Fthbar \Fthbar }
+  R1 | R1 | R1 | R1 |R1 | R1 |R1 | R1 |
   \didl
   \repeat percent 7 { \didl }
-  \repeat volta 4 { <d, a'>4. <a' e'>8~ <a e'> d,8 f d | <g d'>4. <d a'>8~ <d a'>2 | }
+  \repeat unfold 4 { <d, a'>4. <a' e'>8~ <a e'> d,8 f d | <g d'>4. <d a'>8~ <d a'>2 | }
   \repeat volta 4 { r2 r8 a''8( c a ) | c4( d8 c ) e4( d16 c a8  ) }
   \repeat percent 9 { \didl }
+  R1 | R1_"Hier etwas geiles ausdenken"
+  \repeat unfold 7 { R1 | R1 }
+  <a, e'>1~ | <a e'> | <a e'>1~ | <a e'> | <a e'>4 r4 r2 \bar "|."
 }
 
 celloIV = \relative c
 {
   \global
   \partial 16 r16_"pizz" |
-  R1 R1 R1 R1 R1 R1 R1 R1 \repeat volta 4 { R1 R1 } \repeat volta 2 { R1 R1 } |
-  \repeat volta 4 { \basebar  a8 a a a a a a a }
+  R1 R1 R1 R1 R1 R1 R1 R1 \repeat volta 2 { R1 R1 } \repeat volta 2 { R1 R1 } |
+  \repeat volta 2 { \basebar  a8 a a a a a a a }
   \repeat volta 4 { \basebar }
   \alternative { { \basebar } { \basebar } }
   \repeat percent 23 { \basebar  \basebar }
@@ -167,9 +180,11 @@ celloIV = \relative c
   \grindtwo
   \grindtwo
   \repeat percent 4 { \relative a, { \basebar | \basebar | } }
-  \repeat volta 4 { d4. a'8~ a d,8 f d | g4. d8~ d2 | }
+  \repeat unfold 4 { d4. a'8~ a d,8 f d | g4. d8~ d2 | }
   \repeat volta 4 { a'8 a a a a a a a | a a a a a a a a }
   \repeat percent 9 { \basebar  \basebar }
+  \repeat percent 8 { \basebar  \basebar }
+  a1~ | a1 | a1~ | a1 | a4 r4 r2 \bar "|."
 }
 
 celloIIPart = \new Staff \with {
