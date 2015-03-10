@@ -32,6 +32,7 @@ basebar = { \relative a, { a8 a8 a8 a8 a8 a8 a8 a8 } }
 Fthbar = { \relative a { <e a>8 r <e a>[ r16 <e a>] r <e a> <e a> r <e a>8 r8 } } % Bossa Strich / strumming
 grindone = { \relative a, { <a e'>2 g16 d r8 r4 | r8 <g d'>8 r16 <g d'>8. <d a'>2 } }
 grindtwo = { \relative a, { <a e'>4. <g d'> f8 d | <g d'>4. <d a'>8~ <d a'>2 } }
+grindtwobass = { \relative a, { a4. g f8 d | g4. d8~ d2 } }
 
 celloI = \relative c
 {
@@ -71,7 +72,7 @@ celloI = \relative c
   r2 r4 a8 a | cis cis d cis e4 r |
   r2 r4 a,8 a | cis a a g\glissando a4 r |
   r2 r4 a8 a | c c d c e4 r |
-  r2 r4 \xNotesOn a,8 a \xNotesOff | r2 \times 2/3 { r4 c a } |
+  r2 \times 2/3 {r4 a, a} | r2 \times 2/3 { r4 c a } |
   a4 r r2 | r2 \times 2/3 { r4 c a } |
   a4 r4 r2 | d4 d \times 2/3 { c c a } |
   a4 r r2 | r2 \times 2/3 { r4 c c } |
@@ -174,12 +175,12 @@ celloIV = \relative c
   \repeat volta 4 { \basebar }
   \alternative { { \basebar } { \basebar } }
   \repeat percent 23 { \basebar  \basebar }
-  \repeat unfold 3 { <a e'>4 <g d'> <d a'> r | r2 r4 <g d'> | }
-  <a e'> <g d'> <d a'> r | R1 |
-  \grindtwo
-  \grindtwo
-  \grindtwo
-  \grindtwo
+  \repeat unfold 3 { a4 g d r | r2 r4 g | }
+  a g d r | R1 |
+  \grindtwobass
+  \grindtwobass
+  \grindtwobass
+  \grindtwobass
   \repeat percent 4 { \relative a, { \basebar | \basebar | } }
   \repeat unfold 4 { d4. a'8~ a d,8 f d | g4. d8~ d2 | }
   \repeat volta 4 { a'8 a a a a a a a | a a a a a a a a }
