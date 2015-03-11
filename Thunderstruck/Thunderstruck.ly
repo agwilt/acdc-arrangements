@@ -17,6 +17,7 @@ global = {
   \time 4/4
   \partial 16
   \tempo 4 = 132
+  \set Score.markFormatter = #format-mark-box-alphabet
 }
 
 didl = { \relative a { a'16 a, g' a, fis' a, g' a, fis' a, e' a, fis' a, d a | e' a, cis a d a cis a d a cis a d a cis a } } % the angus start
@@ -47,15 +48,15 @@ celloI = \relative c
   \repeat volta 4 { a'4 a4 r2 }
   \alternative { { R1 } { r2 r8 a a cis~ } }
   cis4 r4 r8 a8 a cis | a a a cis8~ cis a4 g8~
-  g\glissando a  r4 r2 | \xNotesOn a,4 a \xNotesOff r8 a' a cis
-  r2 r8 a8 a cis~ | cis a a a~ \times 2/3 { a4 a a }
+  g\glissando a  r4 r2 | \xNotesOn a,4 a \xNotesOff r8 a' a cis~
+  cis4 r4 r8 a8 a cis~ | cis a a a~ \times 2/3 { a4 a a }
   a,4 r4 r2 | \xNotesOn a 4 a \xNotesOff \times 2/3 { r4 a' a }
   cis4 r4 r8 a8 a cis~ | cis r8 r8 cis~ cis a8 a g~ |
   g a r4 r2 | \xNotesOn a,4 a \xNotesOff r8 cis' a cis |
   r2 r8 a a cis~ | cis a r4 \times 2/3 { cis4 a a } |
   a,4 r4 r2 | \xNotesOn a4 a \xNotesOff \times 2/3 { a'4 a a } |
   cis4 r4 r2 | r \times 2/3 { cis8 a cis4 cis } |
-  a2 r2 | r4 r16 cis8. \times 2/3 { cis4 cis a } |
+  a2 r2 | \times 2/3 { r4 r cis } \times 2/3 { cis4 cis a } |
   cis2 r2 | r2 \times 2/3 { cis4 a a } |
   a2 r2 | R1 |
   r2 \times 2/3 { r4 cis cis } | r2 \times 2/3 { r4 cis a } |
@@ -132,7 +133,7 @@ celloII = \relative c'
   <a e'>8 d4 <a e'>8~ <a e'>2~ | <a e'>1 | \break
   <d' fis>8 <d fis>4 <a e'>8~ <a e'>8 r8 r4 | g8 g4 d'8~ d8 e8~ e4 |
   a16 g e d cis8 a8~ a4 r8 g8 | g4. a8~ a8 e'8~ e4 |
-  e16 g a, a fis'16 a, a g' a,16 a fis' a, a16 g' a, a | d4 c8 a8~ a4~ a8 a'8~ | \times 2/3 { a8 g e } \times 2/3 { dis d c } \times 2/3 { e g e } d16 e dis d | c16 a16~ a8 d8 d8~ d2 |
+  e16( g a,) a( fis'16 a,) a( g' a,16) a( fis' a,) a16( g' a,8) | d4 c8 a8~ a4~ a8 a'8~ | \times 2/3 { a8 g e } \times 2/3 { dis d c } \times 2/3 { e g e } d16 e dis d | c16 a16~ a8 d8 d8~ d2 |
   \repeat volta 4 { <a, e'> 4. <g d'> r4 | R1 | }
   R | R |
   \grindtwo
@@ -163,7 +164,8 @@ celloIII = \relative c
   \repeat percent 7 { \didl }
   \repeat unfold 4 { <d, a'>4. <a' e'>8~ <a e'> d,8 f d | <g d'>4. <d a'>8~ <d a'>2 | }
   \repeat volta 4 { r2 r8 a''8( c a ) | c4( d8 c ) e4( d16 c a8  ) }
-  \repeat percent 9 { \didl }
+  \didl
+  \repeat percent 8 { \didl }
   R1\ff | R1_"Hier etwas geiles ausdenken"
   \repeat unfold 7 { R1 | R1 }
   <a, e'>1~ | <a e'> | <a e'>1~_\markup { \italic "rit." } | <a e'> | <a e'>4 r4 r2 \bar "|."
