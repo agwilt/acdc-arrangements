@@ -131,8 +131,8 @@ celloII = \relative c'
   <a e'>8 d4 <a e'>8~ <a e'>2~ | <a e'>1 |
   <a e'>8 d4 <a e'>8~ <a e'>2~ | <a e'>1 | \break
   <d' fis>8 <d fis>4 <a e'>8~ <a e'>8 r8 r4 | g8 g4 d'8~ d8 e8~ e4 |
-  a16 g e d cis8 a8~ a4 r8 g8 | g4. a8~ a4 e'4 |
-  R1 | d4 c8 a8~ a8 a'8~ a4 | \times 2/3 { a8 g e } \times 2/3 { dis d c } \times 2/3 { e g e } d16 e dis d | c16 a16~ a8 d8 d8~ d2 |
+  a16 g e d cis8 a8~ a4 r8 g8 | g4. a8~ a8 e'8~ e4 |
+  e16 g a, a fis'16 a, a g' a,16 a fis' a, a16 g' a, a | d4 c8 a8~ a4~ a8 a'8~ | \times 2/3 { a8 g e } \times 2/3 { dis d c } \times 2/3 { e g e } d16 e dis d | c16 a16~ a8 d8 d8~ d2 |
   \repeat volta 4 { <a, e'> 4. <g d'> r4 | R1 | }
   R | R |
   \grindtwo
