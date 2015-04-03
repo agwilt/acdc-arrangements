@@ -19,29 +19,30 @@ global = {
 }
 
 bassbar = { \relative e, { e8 e e e e e e e } }
-startriff = { e,2. r8 g~ | g e~ e2 r8 a }
+startriff = { e,2. r8 g~ | g e~ e2 r8 a~ | a e~ e2 r8 d'~ | d e,~ e2. }
 
 scoreACelloI = \relative c {
   \global
-  % Music follows here.
+  \repeat unfold 4 { R1 | R1 | R1 | R1 | }
 
 }
 
 scoreACelloII = \relative c {
   \global
-  % Music follows here.
+  \repeat unfold 4 { \startriff }
 
 }
 
 scoreACelloIII = \relative c {
   \global
-  \startriff
+  \repeat unfold 4 { \startriff }
 
 }
 
 scoreACelloIV = \relative c {
   \global
-  \bassbar | \bassbar | \bassbar | \bassbar
+  \bassbar | \bassbar | \bassbar | \bassbar |
+  \repeat unfold 3 { \bassbar | \bassbar | \bassbar | \bassbar | }
 }
 
 scoreACelloIPart = \new Staff \with {
@@ -51,17 +52,17 @@ scoreACelloIPart = \new Staff \with {
 
 scoreACelloIIPart = \new Staff \with {
   instrumentName = "Cello II"
-  midiInstrument = "cello"
+  midiInstrument = "overdriven guitar"
 } { \clef bass \scoreACelloII }
 
 scoreACelloIIIPart = \new Staff \with {
   instrumentName = "Cello III"
-  midiInstrument = "cello"
+  midiInstrument = "overdriven guitar"
 } { \clef bass \scoreACelloIII }
 
 scoreACelloIVPart = \new Staff \with {
   instrumentName = "Cello IV"
-  midiInstrument = "cello"
+  midiInstrument = "electric bass (finger)"
 } { \clef bass \scoreACelloIV }
 
 \score {
