@@ -6,6 +6,7 @@
   title = "Thunderstruck"
   composer = "AC/DC"
   arranger = "Arr. Andreas Gwilt"
+  copyright = "CC BY-SA 4.0"
 }
 
 \paper {
