@@ -19,7 +19,7 @@ global = {
 }
 
 bassbar = { \relative e, { e8 e e e e e e e } }
-startriff = { e,2. r8 g~ | g e~ e2 r8 a~ | a e~ e2 r8 d'~ | d e,~ e2. }
+startriff = { e,2. r8 g~ | g e~ e2 r8 a~ | a e~ e2 r8 d'~ | d e,~ e2. } % TODO: chop
 
 scoreACelloI = \relative c {
   \global
@@ -41,7 +41,7 @@ scoreACelloIII = \relative c {
 
 scoreACelloIV = \relative c {
   \global
-  \bassbar | \bassbar | \bassbar | \bassbar |
+  \relative e, { e8-> e-. e-> e-. e_\markup {\italic "sim."} e e e } | \bassbar | \bassbar | \bassbar |
   \repeat unfold 3 { \bassbar | \bassbar | \bassbar | \bassbar | }
 }
 
