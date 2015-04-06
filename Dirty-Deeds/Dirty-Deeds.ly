@@ -16,6 +16,7 @@ global = {
   \key e \minor
   \time 4/4
   \tempo 4=136
+  \set Score.markFormatter = #format-mark-box-alphabet
 }
 
 bassbar = { \relative e, { e8[ e] e[ e] e[ e] e[ e] } }
@@ -31,7 +32,7 @@ scoreACelloI = \relative c {
   r8 a a g b4. a8~ | \times 2/3 {a4 a a}  b2 | r8 g4 g8 g16 e r8 g4~ | g2 r8 g g4 |
   r8 g4 g g g8~ | g g4 g e'4.-\bendAfter #-4.75 |
   r8 g, g g g4 e8 g~ | g2 r2 |
-
+  a4 g8 a r2 | a4 g a r |
 }
 
 scoreACelloII = \relative c {
@@ -42,6 +43,7 @@ scoreACelloII = \relative c {
   e1~ | e~ | e~ | e2~ e8 d~ d4 |
   e1~ | e~ | e~ | e2~ e8 d~ d4 |
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 |
+  a,1 | a4 g a r |
 }
 
 scoreACelloIII = \relative c {
@@ -52,6 +54,7 @@ scoreACelloIII = \relative c {
   e1~ | e~ | e~ | e2~ e8 d~ d4 |
   e1~ | e~ | e~ | e2~ e8 d~ d4 |
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | <e b'>8 <e b'> <e b'> <e b'> <e b'> r8 r4 | %chop here
+  <a e'>1 | <a e'>4 <g d'> <a e'> r |
 }
 
 scoreACelloIV = \relative c {
@@ -62,6 +65,7 @@ scoreACelloIV = \relative c {
   \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
   \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
   \bassbar | \bassbar | \bassbar | e8-> e-> e-> e-> e-> r8 r4 | %chop instead of r4 here
+  a4 r8 a a e fis e | a4 g a r |
 }
 
 scoreACelloIPart = \new Staff \with {
