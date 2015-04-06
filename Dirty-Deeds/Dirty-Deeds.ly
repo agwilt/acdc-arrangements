@@ -32,7 +32,8 @@ scoreACelloI = \relative c {
   r8 a a g b4. a8~ | \times 2/3 {a4 a a}  b2 | r8 g4 g8 g16 e r8 g4~ | g2 r8 g g4 |
   r8 g4 g g g8~ | g g4 g e'4.-\bendAfter #-4.75 |
   r8 g, g g g4 e8 g~ | g2 r2 |
-  a4 g8 a r2 | a4 g a r |
+  a4 g8 a~ a4 r | a4 g a r | e4 d8 e~ e4 r | e4 d e r | a4 g8 a~ a4 r | a4 g a r |
+  e,4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
 }
 
 scoreACelloII = \relative c {
@@ -43,7 +44,8 @@ scoreACelloII = \relative c {
   e1~ | e~ | e~ | e2~ e8 d~ d4 |
   e1~ | e~ | e~ | e2~ e8 d~ d4 |
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 |
-  a,1 | a4 g a r |
+  a,1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
+  e4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
 }
 
 scoreACelloIII = \relative c {
@@ -54,7 +56,8 @@ scoreACelloIII = \relative c {
   e1~ | e~ | e~ | e2~ e8 d~ d4 |
   e1~ | e~ | e~ | e2~ e8 d~ d4 |
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | <e b'>8 <e b'> <e b'> <e b'> <e b'> r8 r4 | %chop here
-  <a e'>1 | <a e'>4 <g d'> <a e'> r |
+  <a e'>1 | <a e'>4 <g d'> <a e'> r | <e b'>1 | <e b'>4 <d a'> <e b'> r | <a e'>1 | <a e'>4 <g d'> <a e'> r |
+  <e b'>1~ | <e b'> | <e b'>1~ | <e b'> |
 }
 
 scoreACelloIV = \relative c {
@@ -65,7 +68,8 @@ scoreACelloIV = \relative c {
   \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
   \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
   \bassbar | \bassbar | \bassbar | e8-> e-> e-> e-> e-> r8 r4 | %chop instead of r4 here
-  a4 r8 a a e fis e | a4 g a r |
+  a4 r8 a a e fis e | a4 g a r | e4 r8 e e b' cis b | e,4 d e r | a4 r8 a a e fis e | a4 g a r |
+  \bassbar | \bassbar | \bassbar | \bassbar |
 }
 
 scoreACelloIPart = \new Staff \with {
