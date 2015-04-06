@@ -45,7 +45,7 @@ scoreACelloII = \relative c {
   e1~ | e~ | e~ | e2~ e8 d~ d4 |
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 |
   a,1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
-  e4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
+  <b e>1~ | <b e> | <b e>1~ | <b e> |
 }
 
 scoreACelloIII = \relative c {
@@ -57,7 +57,7 @@ scoreACelloIII = \relative c {
   e1~ | e~ | e~ | e2~ e8 d~ d4 |
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | <e b'>8 <e b'> <e b'> <e b'> <e b'> r8 r4 | %chop here
   <a e'>1 | <a e'>4 <g d'> <a e'> r | <e b'>1 | <e b'>4 <d a'> <e b'> r | <a e'>1 | <a e'>4 <g d'> <a e'> r |
-  <e b'>1~ | <e b'> | <e b'>1~ | <e b'> |
+  e1~ | e | e~ | e |
 }
 
 scoreACelloIV = \relative c {
