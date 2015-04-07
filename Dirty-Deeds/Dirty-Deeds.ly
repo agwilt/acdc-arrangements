@@ -66,8 +66,8 @@ scoreACelloII = \relative c {
 scoreACelloIII = \relative c {
   \global
   \repeat volta 4 { e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> }
-  \alternative { {r8 e~ e2.} {r8 e~ e4~ e8 d'8~ d4}}
-  e,1~\mf | e~ | e~ | e2~ e8 d~ d4 |
+  \alternative { {r8 e~ e2.} {r8 e~ e4~ e8 d'8~ <a d>4}}
+  e1~\mf | e~ | e~ | e2~ e8 d~ d4 |
   \VcThreeVerseAccomp
   \VcThreeVerseAccomp
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | <e b'>8 <e b'> <e b'> <e b'> <e b'> r8 r4 | %chop here
