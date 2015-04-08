@@ -1,6 +1,4 @@
 \version "2.16.2"
-% this is a comment, just like in LaTeX
-% Good to know :D
 
 \header {
   title = "Thunderstruck"
