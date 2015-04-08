@@ -42,7 +42,8 @@ scoreACelloI = \relative c {
   r8 a' a4 a8 g a g | a g4 b8~ b2 | r8 g g e g g( e) g~ | g2 r2 |
   r8 a a g a g a a~ | a a4 b8~ b2 | r8 g g e g4 e8 e~ | e4 d8( e) r2 |
   r8 a a g b4. a8~ | a a g b~ b2 | r8 g g e g g( e) g~ | g2 r2 |
-  \times 2/3 {r4 a a} b4 r8 e,8 | g g4 g8~ g4 r4 | r8 g g g g4 e8 e~ | e2 r2 |
+  \times 2/3 {r4 a a} b4 r8 e,8 | g g4 g8~ g4 r4 | r8 g g g g4 e8 e~ | e2 r4 e'\bendAfter #-2 |
+  % refrain
 }
 
 scoreACelloII = \relative c {
@@ -62,6 +63,7 @@ scoreACelloII = \relative c {
   \VcTwoVerseAccomp
   <e b>2~ <e b>8 d~ d4 | <e b>2~ <e b>8 d~ d4 |
   <e b>2~ <e b>8 d~ d4 | <e b>8 <e b> <e b> <e b> <e b> r8 r4 | %chop here
+  % refrain
 }
 
 scoreACelloIII = \relative c {
@@ -80,6 +82,7 @@ scoreACelloIII = \relative c {
   \VcThreeVerseAccomp
   \VcThreeVerseAccomp
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 | %chop here
+  % refrain
 }
 
 scoreACelloIV = \relative c {
@@ -98,6 +101,7 @@ scoreACelloIV = \relative c {
   \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
   \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
   \bassbartwo | \bassbartwo | \bassbartwo | e'8 e e e e r8 r4 |
+  % refrain
 }
 
 scoreACelloIPart = \new Staff \with {
