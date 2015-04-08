@@ -31,7 +31,7 @@ scoreACelloI = \relative c {
   \alternative { {R1} {r2 r8 a' a4} }
   % verse 1
   r4 a8\downbow b a b a g | a a4 b8~ b2 | r8 g\upbow g e g g( e) g~ | g2. r4 |
-  r8 a\upbow a g a g a g | a g4 b8~ b2 | r8 g\upbow g e g e g4~ | g2. r4 |
+  r8 a\upbow a g a g a g | a gis4 b8~ b2 | r8 g\upbow g e g e g4~ | g2. r4 |
   r8 a a g b4. a8~ | \times 2/3 {a4 a a}  b2 | r8 g4 g8 g16 e r8 g4~ | g2 r8 g g4 |
   r8 g4 g g g8~ | g g4 g e'4.-\bendAfter #-4.75 |
   r8 g, g g g4 e8 g~ | g2 r2 |
@@ -42,6 +42,7 @@ scoreACelloI = \relative c {
   r8 a' a4 a8 g a g | a g4 b8~ b2 | r8 g g e g g( e) g~ | g2 r2 |
   r8 a a g a g a a~ | a a4 b8~ b2 | r8 g g e g4 e8 e~ | e4 d8( e) r2 |
   r8 a a g b4. a8~ | a a g b~ b2 | r8 g g e g g( e) g~ | g2 r2 |
+  \times 2/3 {r4 a a} b4 r8 e,8 | g g4 g8~ g4 r4 | r8 g g g g4 e8 e~ | e2 r2 |
 }
 
 scoreACelloII = \relative c {
