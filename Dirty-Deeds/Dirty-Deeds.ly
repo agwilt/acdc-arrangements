@@ -24,6 +24,8 @@ bassbartwo = { \relative e { e8 e e, e e e' e, e } }
 startriff = { e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 d' | r8 e,~ e2. } % TODO: chop
 VcTwoVerseAccomp = { <b e>1~ | <b e>~ | <b e>1~ | <b e>2~ <b e>8 d~ d4 }
 VcThreeVerseAccomp = { e1~ | e~ | e~ | e2~ e8 d~ d4 | }
+SoloAccompOne = { \relative b, { <b fis'>1~ | <b fis'>4~ <b fis'>8 <a e'>4 <a e'>4 <a e'>8 | } }
+SoloBassOne = { b8 b b b b b b b | b b b b a a a a | }
 
 scoreACelloI = \relative c {
   \global
@@ -46,6 +48,8 @@ scoreACelloI = \relative c {
   % refrain
   a,4 g8 a~ a4 r | a4 g a r | e4 d8 e~ e4 r | e4 d e r | a4 g8 a~ a4 r | a4 g a r |
   R1 | r2 r8 e'8~ e4 | R1 | R1 | % make bendy; it's more of a sort of squeak. gliss. up and down
+  % solo
+  \repeat unfold 16 { R1 }
 }
 
 scoreACelloII = \relative c {
@@ -68,6 +72,8 @@ scoreACelloII = \relative c {
   % refrain
   a,1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
   e4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
+  % solo
+  R1 R1 R1 R1 R1 R1 R1 R1
 }
 
 scoreACelloIII = \relative c {
@@ -88,7 +94,9 @@ scoreACelloIII = \relative c {
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 | %chop here
   % refrain
   <a e'>1 | <a e'>4 <g d'> <a e'> r | <e b'>1 | <e b'>4 <d a'> <e b'> r | <a e'>1 | <a e'>4 <g d'> <a e'> r |
-  <e b'>1~ | <e b'>~ | <e b'>~ | <e b'>2~ <e b'>8 d~ d4 |
+  <e b'>1~ | <e b'>~ | <e b'>~ | <e b'>2. r4 | % chop
+  %solo
+  \SoloAccompOne \SoloAccompOne \SoloAccompOne | <b' fis'>1~ | <b fis'>8 <d a'>4 <d a'> <d a'> <d a'>8 |
 }
 
 scoreACelloIV = \relative c {
@@ -109,7 +117,9 @@ scoreACelloIV = \relative c {
   \bassbartwo | \bassbartwo | \bassbartwo | e'8 e e e e r8 r4 |
   % refrain
   a,4 r8 a a e fis e | a4 g a r | e4 r8 e e b' cis b | e,4 d e r | a4 r8 a a e fis e | a4 g a r |
-  \bassbar | \bassbar | \bassbar | \bassbar |
+  \bassbar | \bassbar | \bassbar | e8[ e] e[ e] e[ e] fis[ fis] |
+  % solo
+  \SoloBassOne | \SoloBassOne | \SoloBassOne | b8 b b b b b b b | b b b b d, d d d |
 }
 
 scoreACelloIPart = \new Staff \with {
