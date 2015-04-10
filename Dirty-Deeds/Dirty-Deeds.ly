@@ -52,6 +52,8 @@ scoreACelloI = \relative c {
   % solo
   \repeat unfold 8 { R1 }
   R1 | R1 | R1 | R1 | R1 | R1 | R1 | r2. a,4 |
+  % verse 3
+
 }
 
 scoreACelloII = \relative c {
@@ -77,6 +79,7 @@ scoreACelloII = \relative c {
   % solo
   R1 R1 R1 R1 R1 R1 R1 R1
   R1 R1 R1 R1 R1 R1 R1 R1
+  % verse 3
 }
 
 scoreACelloIII = \relative c {
@@ -102,6 +105,7 @@ scoreACelloIII = \relative c {
   \SoloAccompOne \SoloAccompOne \SoloAccompOne | <b' fis'>1~ | <b fis'>8 <d a'>8 r <d a'> r <d a'> r <d a'>8 |
   e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e2. |
   e2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e4~ e8 d'8~ <a d>4 |
+  % verse 3
 }
 
 scoreACelloIV = \relative c {
@@ -126,6 +130,7 @@ scoreACelloIV = \relative c {
   % solo
   \SoloBassOne | \SoloBassOne | \SoloBassOne | b8 b b b b b b b | b b b b d, d d d |
   \repeat unfold 8 { \bassbar }
+  % verse 3
 }
 
 scoreACelloIPart = \new Staff \with {
