@@ -58,6 +58,9 @@ scoreACelloI = \relative c {
   r8 a a g b4. a8~ | a a g b~ b4 r4 | r8 g g g g4 e8 g~ | g2 r2 |
   r8 a g a~ a4 r8 g | a a g b~ b4 r4 | r8 g4 g8~ g g4 g8~ | g2 r |
   % refrain
+  a4 g8 a~ a4 r | a4 g a r | e4 d8 e~ e4 r | e4 d e r | a4 g8 a~ a4 r | a4 g a r |
+  e,4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
+  % odd thingymagig
 }
 
 scoreACelloII = \relative c {
@@ -90,6 +93,9 @@ scoreACelloII = \relative c {
   <e b>2~ <e b>8 d~ d4 | <e b>2~ <e b>8 d~ d4 |
   <e b>2~ <e b>8 d~ d4 | <e b>8 <e b> <e b> <e b> <e b> r8 r4 | %chop here
   % refrain
+  a,1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
+  <b e>1~ | <b e>1~ | <b e>1~ | <b e>1~ |
+  % odd thingymagig
 }
 
 scoreACelloIII = \relative c {
@@ -121,6 +127,9 @@ scoreACelloIII = \relative c {
   \VcThreeVerseAccomp
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 | %chop here
   % refrain
+  <a e'>1 | <a e'>4 <g d'> <a e'> r | <e b'>1 | <e b'>4 <d a'> <e b'> r | <a e'>1 | <a e'>4 <g d'> <a e'> r |
+  e1~ | e~ | e~ | e~ |
+  % odd thingymagig
 }
 
 scoreACelloIV = \relative c {
@@ -151,6 +160,9 @@ scoreACelloIV = \relative c {
   \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
   e8->[ e] e->[ e] e8->[ e] e->[ e] | \bassbar | \bassbar | e8-> e-> e-> e-> e-> r8 r4 |
   % refrain
+  a4 r8 a a e fis e | a4 g a r | e4 r8 e e b' cis b | e,4 d e r | a4 r8 a a e fis e | a4 g a r |
+  \bassbar | \bassbar | \bassbar | \bassbar |
+  % odd thingymagig
 }
 
 scoreACelloIPart = \new Staff \with {
