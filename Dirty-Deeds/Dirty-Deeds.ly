@@ -56,7 +56,8 @@ scoreACelloI = \relative c {
   r4 g8 g g g g g | g g4 g8~ g4 r4 | r8 g g g~ g g e g-.~| g4 r4 r2 |
   r8 a a4 a8 g a g | a a4 b8~ b4 r4 | r8 e, e d \times 2/3 {g2 e4} | e4 r r2 |
   r8 a a g b4. a8~ | a a g b~ b4 r4 | r8 g g g g4 e8 g~ | g2 r2 |
-  R1 | R1 | R1 | R1 |
+  r8 a g a~ a4 r8 g | a a g b~ b4 r4 | r8 g4 g8~ g g4 g8~ | g2 r |
+  % refrain
 }
 
 scoreACelloII = \relative c {
