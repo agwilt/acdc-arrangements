@@ -77,9 +77,14 @@ scoreACelloII = \relative c {
   a,1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
   e4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
   % solo
-  R1 R1 R1 R1 R1 R1 R1 R1
+  R1_"//TODO: write this bit" R1 R1 R1 R1 R1 R1 R1
   R1 R1 R1 R1 R1 R1 R1 R1
   % verse 3
+  b'''1 | R1 | R1 | r2 r8 d,,~ d4 |
+  \VcTwoVerseAccomp
+  \VcTwoVerseAccomp
+  <e b>2~ <e b>8 d~ d4 | <e b>2~ <e b>8 d~ d4 |
+  <e b>2~ <e b>8 d~ d4 | <e b>8 <e b> <e b> <e b> <e b> r8 r4 | %chop here
 }
 
 scoreACelloIII = \relative c {
@@ -106,6 +111,10 @@ scoreACelloIII = \relative c {
   e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e2. |
   e2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e4~ e8 d'8~ <a d>4 |
   % verse 3
+  \VcThreeVerseAccomp
+  \VcThreeVerseAccomp
+  \VcThreeVerseAccomp
+  e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 | %chop here
 }
 
 scoreACelloIV = \relative c {
@@ -131,6 +140,11 @@ scoreACelloIV = \relative c {
   \SoloBassOne | \SoloBassOne | \SoloBassOne | b8 b b b b b b b | b b b b d, d d d |
   \repeat unfold 8 { \bassbar }
   % verse 3
+  \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
+  \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
+  \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
+  e8->[ e] e->[ e] e8->[ e] e->[ e] | \bassbar | \bassbar | e8-> e-> e-> e-> e-> r8 r4 |
+  % refrain
 }
 
 scoreACelloIPart = \new Staff \with {
