@@ -53,7 +53,10 @@ scoreACelloI = \relative c {
   \repeat unfold 8 { R1 }
   R1 | R1 | R1 | R1 | R1 | R1 | R1 | r2. a,4 |
   % verse 3
-
+  r4 g8 g g g g g | g g4 g8~ g4 r4 | r8 g g g~ g g e g~| g4 r4 r2 |
+  R1 | R1 | R1 | R1 |
+  R1 | R1 | R1 | R1 |
+  R1 | R1 | R1 | R1 |
 }
 
 scoreACelloII = \relative c {
@@ -85,6 +88,7 @@ scoreACelloII = \relative c {
   \VcTwoVerseAccomp
   <e b>2~ <e b>8 d~ d4 | <e b>2~ <e b>8 d~ d4 |
   <e b>2~ <e b>8 d~ d4 | <e b>8 <e b> <e b> <e b> <e b> r8 r4 | %chop here
+  % refrain
 }
 
 scoreACelloIII = \relative c {
@@ -115,6 +119,7 @@ scoreACelloIII = \relative c {
   \VcThreeVerseAccomp
   \VcThreeVerseAccomp
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 | %chop here
+  % refrain
 }
 
 scoreACelloIV = \relative c {
