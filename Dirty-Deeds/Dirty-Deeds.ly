@@ -66,6 +66,11 @@ scoreACelloI = \relative c {
   a4 g8 a~ a4 r | a4 g a r | e4 d8 e~ e4 r | e4 d e r | a4 g8 a~ a4 r | a4 g a r |
   e,4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
   % odd thingymagig
+  R1_"Hier etwas geiles ausdenken!" | R1 | R1 | R1 |
+  R1 | R1 | R1 | R1 |
+  e'4 e8 b~ b4 r4 | r4 r8 b' a g a g | a g b4 r2 | e,4 d e r4 |
+  e4 e8 b~ b4 r8 a' | g b~ b4 r2 | r2 a8 g b4 | e, d e r4 |
+  R1_"Schrei" | \bar "|."
 }
 
 scoreACelloII = \relative c {
