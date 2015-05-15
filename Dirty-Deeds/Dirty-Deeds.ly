@@ -24,6 +24,7 @@ bassbartwo = { \relative e { e8 e e, e e e' e, e } }
 startriff = { e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 d' | r8 e,~ e2. } % TODO: chop
 VcTwoVerseAccomp = { <b e>1~ | <b e>~ | <b e>1~ | <b e>2~ <b e>8 d~ d4 }
 VcThreeVerseAccomp = { e1~ | e~ | e~ | e2~ e8 d~ d4 | }
+SingleAccompOne = { \relative b, { b1~ | b4~ b8 a8 r a r a8 | } }
 SoloAccompOne = { \relative b, { <b fis'>1~ | <b fis'>4~ <b fis'>8 <a e'>8 r <a e'> r <a e'>8 | } }
 SoloAccompTwo = { e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e2. }
 SoloBassOne = { b8 b b b b b b b | b b b b a a a a | }
@@ -84,10 +85,11 @@ scoreACelloII = \relative c {
   a,1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
   e4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
   % solo
-  R1_"//TODO: write this bit" R1 R1 R1 R1 R1 R1 R1
-  R1 R1 R1 R1 R1 R1 R1 R1
+  \SingleAccompOne \SingleAccompOne \SingleAccompOne | b'1~ | b8 d8 r d r d r d8 |
+  e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e2. |
+  e2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e4~ e8 d'8~ <a d>4 |
   % verse 3
-  b'''1 | R1 | R1 | r2 r8 d,,~ d4 |
+  b''1 | R1 | R1 | r2 r8 d,,~ d4 |
   \VcTwoVerseAccomp
   \VcTwoVerseAccomp
   <e b>2~ <e b>8 d~ d4 | <e b>2~ <e b>8 d~ d4 |
