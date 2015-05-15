@@ -21,6 +21,7 @@ global = {
 
 bassbar = { \relative e, { e8[ e] e[ e] e[ e] e[ e] } }
 bassbartwo = { \relative e { e8 e e, e e e' e, e } }
+bassbarendalt = { \relative e, { e8[ e] d[ d] e[ e] e[ e] } }
 startriff = { e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 d' | r8 e,~ e2. } % TODO: chop
 VcTwoVerseAccomp = { <b e>1~ | <b e>~ | <b e>1~ | <b e>2~ <b e>8 d~ d4 }
 VcThreeVerseAccomp = { e1~ | e~ | e~ | e2~ e8 d~ d4 | }
@@ -28,6 +29,9 @@ SingleAccompOne = { \relative b, { b1~ | b4~ b8 a8 r a r a8 | } }
 SoloAccompOne = { \relative b, { <b fis'>1~ | <b fis'>4~ <b fis'>8 <a e'>8 r <a e'> r <a e'>8 | } }
 SoloAccompTwo = { e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e2. }
 SoloBassOne = { b8 b b b b b b b | b b b b a a a a | }
+EndRiffVcThree = { e2. r8 g | r8 e~ e2 r8 a | r8 e~ e2. | e4 d' e, r4 | }
+EndRiffVcTwo = { \relative e, { <e b'>2. r8 g | r8 <e b'>~ <e b'>2 r8 a | r8 <e b'>~ <e b'>2. | <e b'>4 <d a'> <e b'> r4 | } }
+EndRiffVcTwoAlt = { \relative e, { <e b'>4 <e b'>4 <e b'>8 <e b'>8 <e b'>8 g | r8 <e b'>~ <e b'>4 <e b'>8 <e b'>8 <e b'>8 a | r8 <e b'>~ <e b'>4 <e b'>8 <e b'>8 <e b'>8 <e b'>8 | <e b'>4 <d a'> <e b'> r4 | } }
 
 scoreACelloI = \relative c {
   \global
@@ -96,8 +100,10 @@ scoreACelloII = \relative c {
   <e b>2~ <e b>8 d~ d4 | <e b>8 <e b> <e b> <e b> <e b> r8 r4 | %chop here
   % refrain
   a,1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
-  <b e>1~ | <b e>1~ | <b e>1~ | <b e>1~ |
+  <b e>1~ | <b e>1~ | <b e>1~ | <b e>1 |
   % odd thingymagig
+  \EndRiffVcTwo \EndRiffVcTwo \EndRiffVcTwoAlt \EndRiffVcTwoAlt
+  R1_"Schrei" | \bar "|."
 }
 
 scoreACelloIII = \relative c {
@@ -130,8 +136,10 @@ scoreACelloIII = \relative c {
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 | %chop here
   % refrain
   <a e'>1 | <a e'>4 <g d'> <a e'> r | <e b'>1 | <e b'>4 <d a'> <e b'> r | <a e'>1 | <a e'>4 <g d'> <a e'> r |
-  e1~ | e~ | e~ | e~ |
+  e1~ | e~ | e~ | e |
   % odd thingymagig
+  \EndRiffVcThree \EndRiffVcThree \EndRiffVcThree \EndRiffVcThree
+  R1_"Schrei" | \bar "|."
 }
 
 scoreACelloIV = \relative c {
@@ -165,6 +173,11 @@ scoreACelloIV = \relative c {
   a4 r8 a a e fis e | a4 g a r | e4 r8 e e b' cis b | e,4 d e r | a4 r8 a a e fis e | a4 g a r |
   \bassbar | \bassbar | \bassbar | \bassbar |
   % odd thingymagig
+  \bassbar | \bassbar | \bassbar | \bassbarendalt |
+  \bassbar | \bassbar | \bassbar | \bassbarendalt |
+  \bassbar | \bassbar | \bassbar | \bassbarendalt |
+  \bassbar | \bassbar | \bassbar | e4 d4 e4 r4 |
+  R1_"Schrei" | \bar "|."
 }
 
 scoreACelloIPart = \new Staff \with {
