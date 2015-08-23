@@ -92,7 +92,7 @@ scoreACelloII = \relative c {
   a1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
   e4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
   % solo
-  R1_"hier etwas geiles ausdenken" R1 | R1 R1 | R1 R1 | R1 R1 |
+  R1_"Hier etwas geiles ausdenken!" R1 | R1 R1 | R1 R1 | R1 R1 |
   R1 R1 | R1 R1 | R1 R1 | R1 R1 |
   % verse 3
   b'''1 | R1 | R1 | r2 r8 d,,~ d4 |
