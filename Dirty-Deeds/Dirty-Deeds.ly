@@ -6,7 +6,6 @@
   composer = "AC/DC"
   arranger = "Arr. Andreas Gwilt"
   copyright = "CC BY-SA 4.0"
-  instrument = "Cello IV"
 }
 
 \paper {
@@ -185,38 +184,38 @@ scoreACelloIV = \relative c {
   \global
   \repeat volta 4 { e,8->[ e-.] e->[ e-.] e_\markup {\italic "sim."}[ e] e[ e] | \bassbar | \bassbar |}
   \alternative { {\bassbar} {\bassbar} }
-  \break \mark \markup{ \box "Verse 2" }
+  %\break \mark \markup{ \box "Verse 2" }
   \repeat percent 6 { e'8-> e e,-> e e e'-> e,-> e | e'8 e e,_\markup {\italic "sim."} e e e' e, e | }
   \bassbar | \bassbar | \bassbar | e8-> e-> e-> e-> e-> r8 r4 | %chop instead of r4 here
   % refrain
-  \break \mark \markup{ \box "Chorus 1" }
+  %\break \mark \markup{ \box "Chorus 1" }
   a4 r8 a a e fis e | a4 g a r | e4 r8 e e b' cis b | e,4 d e r | a4 r8 a a e fis e | a4 g a r |
-  \break
+  %\break
   \bassbar | \bassbar | \bassbar | \bassbar |
   % verse 2
-  \break \mark \markup{ \box "Verse 2" }
+  %\break \mark \markup{ \box "Verse 2" }
   \repeat percent 7 { \bassbartwo | \bassbartwo | }
   \bassbartwo | e'8 e e e e r8 r4 |
   % refrain
-  \break \mark \markup{ \box "Chorus 2" }
+  %\break \mark \markup{ \box "Chorus 2" }
   a,4 r8 a a e fis e | a4 g a r | e4 r8 e e b' cis b | e,4 d e r | a4 r8 a a e fis e | a4 g a r |
-  \break
+  %\break
   \bassbar | \bassbar | \bassbar | e8[ e] e[ e] e[ e] fis[ fis] |
   % solo
-  \break \mark \markup{ \box "Solo" }
+  %\break \mark \markup{ \box "Solo" }
   \SoloBassOne | \SoloBassOne | \SoloBassOne | b8 b b b b b b b | b b b b d, d d d |
   \repeat percent 4 { \bassbar \bassbar }
   % verse 3
-  \break \mark \markup{ \box "Verse 3" }
+  %\break \mark \markup{ \box "Verse 3" }
   \repeat percent 6 { \bassbartwo | \bassbartwo | }
   e8->[ e] e->[ e] e8->[ e] e->[ e] | \bassbar | \bassbar | e8-> e-> e-> e-> e-> r8 r4 |
   % refrain
-  \break \mark \markup{ \box "Chorus 3" }
+  %\break \mark \markup{ \box "Chorus 3" }
   a4 r8 a a e fis e | a4 g a r | e4 r8 e e b' cis b | e,4 d e r | a4 r8 a a e fis e | a4 g a r |
-  \break
+  %\break
   \bassbar | \bassbar | \bassbar | \bassbar |
   % odd thingymagig
-  \break \mark \markup{ \box "Ending" }
+  %\break \mark \markup{ \box "Ending" }
   \bassbar | \bassbar | \bassbar | \bassbarendalt |
   \bassbar | \bassbar | \bassbar | \bassbarendalt |
   \bassbar | \bassbar | \bassbar | \bassbarendalt |
@@ -246,9 +245,9 @@ scoreACelloIVPart = \new Staff \with {
 
 \score {
   <<
-%    \scoreACelloIPart
-%    \scoreACelloIIPart
-%    \scoreACelloIIIPart
+    \scoreACelloIPart
+    \scoreACelloIIPart
+    \scoreACelloIIIPart
     \scoreACelloIVPart
   >>
   \layout { }
