@@ -86,43 +86,43 @@ scoreACelloII = \relative c {
   \global
   \repeat volta 4 { e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 d' }
   \alternative { {r8 e,~ e2.} {r8 e~ e4~ e8 d'8~ d4}}
-  \mark \markup{ \box "Verse 1" }
+  %\mark \markup{ \box "Verse 1" }
   e1~\mf | e~ | e~ | e2~ e8 d~ d4 |
   \VcTwoVerseAccomp | \VcTwoVerseAccomp |
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 |
   % refrain
-  \mark \markup{ \box "Chorus 1" }
+  %\mark \markup{ \box "Chorus 1" }
   a,1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
   \VcTwoVerseAccomp
   % verse 2
-  \mark \markup{ \box "Verse 2" }
+  %\mark \markup{ \box "Verse 2" }
   \VcTwoVerseAccomp
   \VcTwoVerseAccomp
   \VcTwoVerseAccomp
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 | %chop here
   % refrain
-  \mark \markup{ \box "Chorus 2" }
+  %\mark \markup{ \box "Chorus 2" }
   a1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
   e4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
   % solo
-  \break \mark \markup{ \box "Solo" }
+  %\break \mark \markup{ \box "Solo" }
   <<
     \chords { \powerChords b1.:1.5  a2:1.5 | b1.:1.5  a2:1.5 | b1.:1.5 a2:1.5 | b1.:1.5 d2:1.5 |
               e1:m e1:m e1:m e1:m | e1:m e1:m e1:m e1:m | }
     {R1 R1 | R1 R1 | R1 R1 | R1 R1 | R1 R1 | R1 R1 | R1 R1 | R1 R1 |}
   >>
   % verse 3
-  \mark \markup{ \box "Verse 3" }
+  %\mark \markup{ \box "Verse 3" }
   R1 | R1 | R1 | r2 r8 d'~ d4 |
   \VcTwoVerseAccomp
   \VcTwoVerseAccomp
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 | %chop here
   % refrain
-  \mark \markup{ \box "Chorus 3" }
+  %\mark \markup{ \box "Chorus 3" }
   a,1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
   e'1~ | e1~ | e1~ | e1 |
   % odd thingymagig
-  \mark \markup{ \box "Ending" }
+  %\mark \markup{ \box "Ending" }
   \EndRiffVcTwo \EndRiffVcTwo \EndRiffVcTwoAlt \EndRiffVcTwoAlt
   R1_"Schrei" | \bar "|."
 }
@@ -152,7 +152,7 @@ scoreACelloIII = \relative c {
   <a e'>1 | <a e'>4 <g d'> <a e'> r | <e b'>1 | <e b'>4 <d a'> <e b'> r | <a e'>1 | <a e'>4 <g d'> <a e'> r |
   <e b'>1~ | <e b'>~ | <e b'>~ | <e b'>2. r4 | % chop
   %solo
-  \mark \markup{ \box "Solo" }
+  \break \mark \markup{ \box "Solo" }
   \SoloAccompOne \SoloAccompOne \SoloAccompOne | <b' fis'>1~ | <b fis'>8 <d a'>8 r <d a'> r <d a'> r <d a'>8 |
   e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e2. |
   e2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e4~ e8 d'8~ <a d>4 |
@@ -168,8 +168,15 @@ scoreACelloIII = \relative c {
   <a e'>1 | <a e'>4 <g d'> <a e'> r | <e b'>1 | <e b'>4 <d a'> <e b'> r | <a e'>1 | <a e'>4 <g d'> <a e'> r |
   <e b'>1~ | <e b'>~ | <e b'>~ | <e b'> |
   % odd thingymagig
-  \mark \markup{ \box "Ending" }
-  R1_"Hier etwas geiles ausdenken!" R1 R1 R1 | R1 R1 R1 R1 | \EndRiffVcThree \EndRiffVcThree
+  \mark \markup{ \box "Ending (solo)" }
+  <<
+    \new ChordNames {
+      \set chordChanges = ##t
+      \chordmode { \powerChords e1:1.5 | e1:1.5 | e1:1.5 | e1:1.5 | e1:1.5 | e1:1.5 | e1:1.5 | e1:1.5 | }
+    }
+    { R1 R1 R1 R1 | R1 R1 R1 R1 | }
+  >>
+  \EndRiffVcThree \EndRiffVcThree
   R1_"Schrei" | \bar "|."
 }
 
@@ -242,8 +249,8 @@ scoreACelloIVPart = \new Staff \with {
 \score {
   <<
 %    \scoreACelloIPart
-    \scoreACelloIIPart
-%    \scoreACelloIIIPart
+%    \scoreACelloIIPart
+    \scoreACelloIIIPart
 %    \scoreACelloIVPart
   >>
   \layout { }
