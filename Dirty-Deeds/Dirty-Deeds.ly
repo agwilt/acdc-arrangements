@@ -55,8 +55,8 @@ scoreACelloI = \relative c {
   \mark \default a,4 g8 a~ a4 r | a4 g a r | e4 d8 e~ e4 r | e4 d e r | a4 g8 a~ a4 r | a4 g a r |
   R1 | r2 r8 e'8~ e4 | R1 | R1 | % make bendy; it's more of a sort of squeak. gliss. up and down
   % solo
-  \mark \default \SingleAccompOne \SingleAccompOne \SingleAccompOne | b,1~ | b8 d8 r d r d r d8 |
-  e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e2. |
+  \mark \default \SingleAccompOne \SingleAccompOne \SingleAccompOne | b,1~ | b8 d8 r d, r d r d8 |
+  e2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e2. |
   e2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> | r8 e~ e4~ e8 r8 a'4 |
   % verse 3
   \mark \default r4 g8 g g g g g | g g4 g8~ g4 r4 | r8 g g g~ g g e g-.~| g4 r4 r2 |
@@ -92,8 +92,11 @@ scoreACelloII = \relative c {
   a1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
   e4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
   % solo
-  R1_"Hier etwas geiles ausdenken!" R1 | R1 R1 | R1 R1 | R1 R1 |
-  R1 R1 | R1 R1 | R1 R1 | R1 R1 |
+  <<
+    \chords { \powerChords b1.:1.5  a2:1.5 | b1.:1.5  a2:1.5 | b1.:1.5 a2:1.5 | b1.:1.5 d2:1.5 |
+              e1:m e1:m e1:m e1:m | e1:m e1:m e1:m e1:m | }
+    {R1_"Hier etwas geiles ausdenken!" R1 | R1 R1 | R1 R1 | R1 R1 | R1 R1 | R1 R1 | R1 R1 | R1 R1 |}
+  >>
   % verse 3
   b'''1 | R1 | R1 | r2 r8 d,,~ d4 |
   \VcTwoVerseAccomp
