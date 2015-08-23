@@ -6,6 +6,7 @@
   composer = "AC/DC"
   arranger = "Arr. Andreas Gwilt"
   copyright = "CC BY-SA 4.0"
+  instrument = "Cello IV"
 }
 
 \paper {
@@ -131,44 +132,44 @@ scoreACelloIII = \relative c {
   \global
   \repeat volta 4 { e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> }
   \alternative { {r8 e~ e2.} {r8 e~ e4~ e8 d'8~ <a d>4}}
-  \mark \markup{ \box "Verse 1" }
+  %\mark \markup{ \box "Verse 1" }
   e1~\mf | e~ | e~ | e2~ e8 d~ d4 |
   \VcThreeVerseAccomp
   \VcThreeVerseAccomp
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | <e b'>8 <e b'> <e b'> <e b'> <e b'> r8 r4 | %chop here
   % refrain
-  \mark \markup{ \box "Chorus 1" }
+  %\mark \markup{ \box "Chorus 1" }
   <a e'>1 | <a e'>4 <g d'> <a e'> r | <e b'>1 | <e b'>4 <d a'> <e b'> r | <a e'>1 | <a e'>4 <g d'> <a e'> r |
   \VcThreeVerseAccomp
   % verse 2
-  \mark \markup{ \box "Verse 2" }
+  %\mark \markup{ \box "Verse 2" }
   \VcThreeVerseAccomp
   \VcThreeVerseAccomp
   \VcThreeVerseAccomp
   <e b'>2~ <e b'>8 d~ d4 | <e b'>2~ <e b'>8 d~ d4 |
   <e b'>2~ <e b'>8 d~ d4 | <e b'>8 <e b'> <e b'> <e b'> <e b'> r8 r4 | %chop here
   % refrain
-  \mark \markup{ \box "Chorus 2" }
+  %\mark \markup{ \box "Chorus 2" }
   <a e'>1 | <a e'>4 <g d'> <a e'> r | <e b'>1 | <e b'>4 <d a'> <e b'> r | <a e'>1 | <a e'>4 <g d'> <a e'> r |
   <e b'>1~ | <e b'>~ | <e b'>~ | <e b'>2. r4 | % chop
   %solo
-  \break \mark \markup{ \box "Solo" }
+  %\break \mark \markup{ \box "Solo" }
   \SoloAccompOne \SoloAccompOne \SoloAccompOne | <b' fis'>1~ | <b fis'>8 <d a'>8 r <d a'> r <d a'> r <d a'>8 |
   e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e2. |
   e2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e4~ e8 d'8~ <a d>4 |
   % verse 3
-  \mark \markup{ \box "Verse 3" }
+  %\mark \markup{ \box "Verse 3" }
   \VcThreeVerseAccomp
   \VcThreeVerseAccomp
   \VcThreeVerseAccomp
   <e b'>2~ <e b'>8 d~ d4 | <e b'>2~ <e b'>8 d~ d4 |
   <e b'>2~ <e b'>8 d~ d4 | <e b'>8 <e b'> <e b'> <e b'> <e b'> r8 r4 |
   % refrain
-  \mark \markup{ \box "Chorus 3" }
+  %\mark \markup{ \box "Chorus 3" }
   <a e'>1 | <a e'>4 <g d'> <a e'> r | <e b'>1 | <e b'>4 <d a'> <e b'> r | <a e'>1 | <a e'>4 <g d'> <a e'> r |
   <e b'>1~ | <e b'>~ | <e b'>~ | <e b'> |
   % odd thingymagig
-  \mark \markup{ \box "Ending (solo)" }
+  %\mark \markup{ \box "Ending (solo)" }
   <<
     \new ChordNames {
       \set chordChanges = ##t
@@ -184,41 +185,38 @@ scoreACelloIV = \relative c {
   \global
   \repeat volta 4 { e,8->[ e-.] e->[ e-.] e_\markup {\italic "sim."}[ e] e[ e] | \bassbar | \bassbar |}
   \alternative { {\bassbar} {\bassbar} }
-  \mark \markup{ \box "Verse 2" }
-  e'8-> e e,-> e e e'-> e,-> e | e'8 e e,_\markup {\italic "sim."} e e e' e, e | \bassbartwo | \bassbartwo |
-  \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
-  \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
+  \break \mark \markup{ \box "Verse 2" }
+  \repeat percent 6 { e'8-> e e,-> e e e'-> e,-> e | e'8 e e,_\markup {\italic "sim."} e e e' e, e | }
   \bassbar | \bassbar | \bassbar | e8-> e-> e-> e-> e-> r8 r4 | %chop instead of r4 here
   % refrain
-  \mark \markup{ \box "Chorus 1" }
+  \break \mark \markup{ \box "Chorus 1" }
   a4 r8 a a e fis e | a4 g a r | e4 r8 e e b' cis b | e,4 d e r | a4 r8 a a e fis e | a4 g a r |
+  \break
   \bassbar | \bassbar | \bassbar | \bassbar |
   % verse 2
-  \mark \markup{ \box "Verse 2" }
-  \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
-  \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
-  \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
-  \bassbartwo | \bassbartwo | \bassbartwo | e'8 e e e e r8 r4 |
+  \break \mark \markup{ \box "Verse 2" }
+  \repeat percent 7 { \bassbartwo | \bassbartwo | }
+  \bassbartwo | e'8 e e e e r8 r4 |
   % refrain
-  \mark \markup{ \box "Chorus 2" }
+  \break \mark \markup{ \box "Chorus 2" }
   a,4 r8 a a e fis e | a4 g a r | e4 r8 e e b' cis b | e,4 d e r | a4 r8 a a e fis e | a4 g a r |
+  \break
   \bassbar | \bassbar | \bassbar | e8[ e] e[ e] e[ e] fis[ fis] |
   % solo
-  \mark \markup{ \box "Solo" }
+  \break \mark \markup{ \box "Solo" }
   \SoloBassOne | \SoloBassOne | \SoloBassOne | b8 b b b b b b b | b b b b d, d d d |
-  \repeat unfold 8 { \bassbar }
+  \repeat percent 4 { \bassbar \bassbar }
   % verse 3
-  \mark \markup{ \box "Verse 3" }
-  \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
-  \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
-  \bassbartwo | \bassbartwo | \bassbartwo | \bassbartwo |
+  \break \mark \markup{ \box "Verse 3" }
+  \repeat percent 6 { \bassbartwo | \bassbartwo | }
   e8->[ e] e->[ e] e8->[ e] e->[ e] | \bassbar | \bassbar | e8-> e-> e-> e-> e-> r8 r4 |
   % refrain
-  \mark \markup{ \box "Chorus 3" }
+  \break \mark \markup{ \box "Chorus 3" }
   a4 r8 a a e fis e | a4 g a r | e4 r8 e e b' cis b | e,4 d e r | a4 r8 a a e fis e | a4 g a r |
+  \break
   \bassbar | \bassbar | \bassbar | \bassbar |
   % odd thingymagig
-  \mark \markup{ \box "Ending" }
+  \break \mark \markup{ \box "Ending" }
   \bassbar | \bassbar | \bassbar | \bassbarendalt |
   \bassbar | \bassbar | \bassbar | \bassbarendalt |
   \bassbar | \bassbar | \bassbar | \bassbarendalt |
@@ -250,8 +248,8 @@ scoreACelloIVPart = \new Staff \with {
   <<
 %    \scoreACelloIPart
 %    \scoreACelloIIPart
-    \scoreACelloIIIPart
-%    \scoreACelloIVPart
+%    \scoreACelloIIIPart
+    \scoreACelloIVPart
   >>
   \layout { }
   \midi { }
