@@ -78,8 +78,7 @@ scoreACelloII = \relative c {
   \repeat volta 4 { e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 d' }
   \alternative { {r8 e,~ e2.} {r8 e~ e4~ e8 d'8~ d4}}
   e1~\mf | e~ | e~ | e2~ e8 d~ d4 |
-  \VcThreeVerseAccomp
-  \VcThreeVerseAccomp
+  \VcTwoVerseAccomp | \VcTwoVerseAccomp |
   e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 |
   % refrain
   a,1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
@@ -88,8 +87,7 @@ scoreACelloII = \relative c {
   \VcTwoVerseAccomp
   \VcTwoVerseAccomp
   \VcTwoVerseAccomp
-  <e b'>2~ <e b'>8 d~ d4 | <e b'>2~ <e b'>8 d~ d4 |
-  <e b'>2~ <e b'>8 d~ d4 | <e b'>8 <e b'> <e b'> <e b'> <e b'> r8 r4 | %chop here
+  e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 | %chop here
   % refrain
   a1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
   e4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
@@ -124,7 +122,8 @@ scoreACelloIII = \relative c {
   \VcThreeVerseAccomp
   \VcThreeVerseAccomp
   \VcThreeVerseAccomp
-  e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 | %chop here
+  <e b'>2~ <e b'>8 d~ d4 | <e b'>2~ <e b'>8 d~ d4 |
+  <e b'>2~ <e b'>8 d~ d4 | <e b'>8 <e b'> <e b'> <e b'> <e b'> r8 r4 | %chop here
   % refrain
   <a e'>1 | <a e'>4 <g d'> <a e'> r | <e b'>1 | <e b'>4 <d a'> <e b'> r | <a e'>1 | <a e'>4 <g d'> <a e'> r |
   <e b'>1~ | <e b'>~ | <e b'>~ | <e b'>2. r4 | % chop
