@@ -56,7 +56,8 @@ scoreACelloI = \relative c {
   R1 | r2 r8 e'8~ e4 | R1 | R1 | % make bendy; it's more of a sort of squeak. gliss. up and down
   % solo
   \SingleAccompOne \SingleAccompOne \SingleAccompOne | b,1~ | b8 d8 r d r d r d8 |
-  R1 | R1 | R1 | R1 | R1 | R1 | R1 | r2. a'4 |
+  e,2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e2. |
+  e2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> | r8 e~ e4~ e8 r8 a'4 |
   % verse 3
   r4 g8 g g g g g | g g4 g8~ g4 r4 | r8 g g g~ g g e g-.~| g4 r4 r2 |
   r8 a a4 a8 g a g | a a4 b8~ b4 r4 | r8 e, e d \times 2/3 {g2 e4} | e4 r r2 |
@@ -99,8 +100,7 @@ scoreACelloII = \relative c {
   b'''1 | R1 | R1 | r2 r8 d,,~ d4 |
   \VcTwoVerseAccomp
   \VcTwoVerseAccomp
-  <e b>2~ <e b>8 d~ d4 | <e b>2~ <e b>8 d~ d4 |
-  <e b>2~ <e b>8 d~ d4 | <e b>8 <e b> <e b> <e b> <e b> r8 r4 | %chop here
+  e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 | %chop here
   % refrain
   a,1 | a4 g a r | e1 | e4 d e r | a1 | a4 g a r |
   e'1~ | e1~ | e1~ | e1 |
@@ -136,7 +136,8 @@ scoreACelloIII = \relative c {
   \VcThreeVerseAccomp
   \VcThreeVerseAccomp
   \VcThreeVerseAccomp
-  e2~ e8 d~ d4 | e2~ e8 d~ d4 | e2~ e8 d~ d4 | e8 e e e e r8 r4 | %chop here
+  <e b'>2~ <e b'>8 d~ d4 | <e b'>2~ <e b'>8 d~ d4 |
+  <e b'>2~ <e b'>8 d~ d4 | <e b'>8 <e b'> <e b'> <e b'> <e b'> r8 r4 |
   % refrain
   <a e'>1 | <a e'>4 <g d'> <a e'> r | <e b'>1 | <e b'>4 <d a'> <e b'> r | <a e'>1 | <a e'>4 <g d'> <a e'> r |
   <e b'>1~ | <e b'>~ | <e b'>~ | <e b'> |
