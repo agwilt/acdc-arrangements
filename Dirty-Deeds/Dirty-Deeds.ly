@@ -6,7 +6,6 @@
   composer = "AC/DC"
   arranger = "Arr. Andreas Gwilt"
   copyright = "CC BY-SA 4.0"
-  instrument = "Cello I"
 }
 
 \paper {
@@ -40,20 +39,20 @@ scoreACelloI = \relative c {
   \alternative { {R1} {r2 r8 a' a4} }
   % verse 1
   \mark \markup{ \box "Verse 1" }
-  \break
+  %\break
   r4 a8\downbow b a b a g | a a4 b8~ b2 | r8 g\upbow g e g g( e) g~ | g2. r4 |
   r8 a\upbow a g a g a g | a gis4 b8~ b2 | r8 g\upbow g e g e g4~ | g2. r4 |
   r8 a a g b4. a8~ | \times 2/3 {a4 a a}  b2 | r8 g4 g8 g16 e r8 g4~ | g2 r8 g g4 |
   r8 g4 g8~ g g4 g8~ | g g4 g8~ g e'4.-\bendAfter #-4.75 | r8 g, g g g4 e8 g~ | g2 r2 |
   % refrain
   \mark \markup{ \box "Chorus 1" }
-  \break
+  %\break
   a4 g8 a~ a4 r | a4 g a r | e4 d8 e~ e4 r | e4 d e r | a4 g8 a~ a4 r | a4 g a r |
-  \break
+  %\break
   e,4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
   % verse 2
   \mark \markup{ \box "Verse 2" }
-  \break
+  %\break
   \clef tenor
   r8 a'' a4 a8 g a g | a g4 b8~ b2 | r8 g g e g g( e) g~ | g2 r2 |
   r8 a a g a g a a~ | a a4 b8~ b2 | r8 g g e g4 e8 e~ | e4 d8( e) r2 |
@@ -61,23 +60,23 @@ scoreACelloI = \relative c {
   \times 2/3 {r4 a a} b4 r8 e,8 | g g4 g8~ g4 r4 | r8 g g g g4 e8 e~ | e2 e'4\bendAfter #-2 r4 |
   % refrain
   \mark \markup{ \box "Chorus 2" }
-  \break
+  %\break
   a,4 g8 a~ a4 r | a4 g a r | e4 d8 e~ e4 r | e4 d e r |
-  \break
+  %\break
   a4 g8 a~ a4 r | a4 g a r |
   R1 | r2 r8 e8~ e4 | R1 | R1 | % make bendy; it's more of a sort of squeak. gliss. up and down
   % solo
   \mark \markup{ \box "Solo" }
-  \break
+  %\break
   \clef bass
   \SingleAccompOne \SingleAccompOne \SingleAccompOne |
   b,1~ | b8 d8 r d, r d r d8 |
   e2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> r8 e~ e2. |
-  \break
+  %\break
   e2. r8 g | r8 e~ e2 r8 a | r8 e~ e2 r8 <a d> | r8 e~ e4~ e8 r8 a'4 |
   % verse 3
   \mark \markup{ \box "Verse 3" }
-  \break
+  %\break
   \clef tenor
   r4 g'8 g g g g g | g g4 g8~ g4 r4 | r8 g g g~ g g e g-.~| g4 r4 r2 |
   r8 a a4 a8 g a g | a a4 b8~ b4 r4 | r8 e, e d \times 2/3 {g2 e4} | e4 r r2 |
@@ -85,14 +84,14 @@ scoreACelloI = \relative c {
   r8 a g a~ a4 r8 g | a a g b~ b4 r4 | r8 g4 g8~ g g4 g8~ | g2 r |
   % refrain
   \mark \markup{ \box "Chorus 3" }
-  \break
+  %\break
   a4 g8 a~ a4 r | a4 g a r | e4 d8 e~ e4 r | e4 d e r | a4 g8 a~ a4 r | a4 g a r |
   \clef bass
-  \break
+  %\break
   e,,4 d8 e4 e d8 | e4 d e r | e4 d8 e4 e d8 | e4 d e r |
   % odd thingymagig
   \mark \markup{ \box "Ending" }
-  \break
+  %\break
   \EndRiffVcThree
   \EndRiffVcThree |
   e'4 e8 b~ b4 r4 | r4 r8 b' a g a g | a g b4 r2 | e,4 d e r4 |
@@ -264,9 +263,9 @@ scoreACelloIVPart = \new Staff \with {
 \score {
   <<
     \scoreACelloIPart
-%    \scoreACelloIIPart
-%    \scoreACelloIIIPart
-%    \scoreACelloIVPart
+    \scoreACelloIIPart
+    \scoreACelloIIIPart
+    \scoreACelloIVPart
   >>
   \layout { }
   \midi { }
